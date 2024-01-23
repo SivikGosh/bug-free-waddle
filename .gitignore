@@ -1,0 +1,5 @@
+*.session
+bill.*
+__pycache__/
+.env
+venv/
