@@ -1,4 +1,5 @@
 from bill import addresses
+import sqlite3
 
 
 def get_unique_streets():
@@ -30,9 +31,9 @@ def get_result_sets(d):
     result = []
 
     for street, build in d.items():
-        print(street)
-        res = street.split() + build
-        result.append(set(res))
+        build_list = ', '.join(build)
+        res = [street] + [''] + [build_list]
+        result.append(tuple(res))
 
     return result
 
@@ -42,3 +43,8 @@ unique_addresses = get_unique_addresses()
 dict_addresses = get_addresses_dict(unique_streets, unique_addresses)
 
 result = get_result_sets(dict_addresses)
+
+con = sqlite3.connect('db.sqlite3')
+cur = con.cursor()
+# cur.executemany('INSERT INTO addresses VALUES(?, ?, ?)', result)
+con.commit()
