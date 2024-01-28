@@ -1,4 +1,4 @@
-from bill import addresses
+from bill import addresses # TODO выпилить данный файл, брать адреса из бд
 import sqlite3
 
 
@@ -48,3 +48,5 @@ con = sqlite3.connect('db.sqlite3')
 cur = con.cursor()
 # cur.executemany('INSERT INTO addresses VALUES(?, ?, ?)', result)
 con.commit()
+
+# TODO добавить ORM для работы с базой
