@@ -7,3 +7,7 @@ Chat messages listener and repply messages by target words.
 множеств с названием улицы и номерами домов.
 - convert.py: преобразует список адресов из bill.csv в в список json-объектов,
 который потом работает в качестве списка addresses в python.
+
+# TODO найти редактор readme-файлов
+
+сейчас docker образ весит 329MB

@@ -17,3 +17,5 @@ def csv_to_json(csv_file, json_file):
 
 
 csv_to_json('bill.csv', 'bill.json')
+
+# TODO добавить конвертацию xlsx в json (либо сразу писать в бд?)
