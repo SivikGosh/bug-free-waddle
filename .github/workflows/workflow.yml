@@ -1,11 +1,11 @@
-name: "Todos"
-on: ["push"]
+name: "Run TODO to Issue"
+on: [ "push" ]
 jobs:
   build:
     runs-on: "ubuntu-latest"
     steps:
-      - uses: "actions/checkout@master"
-      - name: "TODO-2-GH-Issue"
-        uses: "jamminroot/todo-2-gh-issue@master"
+      - uses: "actions/checkout@v3"
+      - name: "TODO to Issue"
+        uses: "alstr/todo-to-issue-action@v4"
         with:
-          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          AUTO_ASSIGN: true
