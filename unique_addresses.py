@@ -50,5 +50,3 @@ cur = con.cursor()
 con.commit()
 
 # TODO: добавить ORM для работы с базой
-
-# TODO: test
