@@ -49,4 +49,4 @@ cur = con.cursor()
 # cur.executemany('INSERT INTO addresses VALUES(?, ?, ?)', result)
 con.commit()
 
-# TODO добавить ORM для работы с базой
+# TODO: добавить ORM для работы с базой
