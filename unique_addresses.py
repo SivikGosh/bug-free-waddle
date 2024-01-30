@@ -1,4 +1,6 @@
-from bill import addresses # TODO: выпилить данный файл, брать адреса из бд
+# TODO: выпилить файл billи из импорта, брать адреса из бд
+
+from bill import addresses
 import sqlite3
 
 
@@ -49,4 +51,4 @@ cur = con.cursor()
 # cur.executemany('INSERT INTO addresses VALUES(?, ?, ?)', result)
 con.commit()
 
-# TODO: добавить ORM для работы с базой
+# TODO: добавить ORM для работы с базой ' workflow_old
