@@ -1,4 +1,4 @@
-from bill import addresses # TODO выпилить данный файл, брать адреса из бд
+from bill import addresses # TODO: выпилить данный файл, брать адреса из бд
 import sqlite3
 
 
