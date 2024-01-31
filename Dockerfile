@@ -29,4 +29,4 @@ EXPOSE 8000
 
 CMD python main.py
 
-# TODO нужна оптимизация
+# TODO: нужна оптимизация файла
