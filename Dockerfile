@@ -28,5 +28,3 @@ COPY . .
 EXPOSE 8000
 
 CMD python main.py
-
-# TODO: нужна оптимизация файла

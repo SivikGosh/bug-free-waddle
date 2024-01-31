@@ -13,7 +13,7 @@ api_hash = os.getenv('API_HASH')
 app = Client("my_account", api_id, api_hash)
 
 
-def main():  # TODO: рефакт функции (класс?)
+def main():
     with app:
         start_date = input(
             'введите начальную дату периода (в формате гггг-мм-дд): '
@@ -54,5 +54,3 @@ def main():  # TODO: рефакт функции (класс?)
 
 
 app.run(main())
-
-# TODO: настройка скрипта на прослушивание чата на новые сообщения

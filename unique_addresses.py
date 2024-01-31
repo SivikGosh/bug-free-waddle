@@ -1,4 +1,4 @@
-from bill import addresses # TODO: выпилить bill, получать адреса из бд
+from bill import addresses
 import sqlite3
 
 
@@ -47,5 +47,3 @@ result = get_result_sets(dict_addresses)
 con = sqlite3.connect('db.sqlite3')
 cur = con.cursor()
 con.commit()
-
-# TODO: добавить ORM для работы с базой
