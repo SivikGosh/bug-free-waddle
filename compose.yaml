@@ -1,6 +1,3 @@
-# TODO: добавить версию файла
-# TODO: добавить .env
-
 services:
   server:
     build:

@@ -1,5 +1,3 @@
-# TODO: добавить конвертацию xlsx в json (либо сразу писать в бд?)
-
 import csv
 import json
 
