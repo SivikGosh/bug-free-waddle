@@ -1,11 +1,11 @@
-# TODO: настройка скрипта на прослушивание чата на новые сообщения
-# TODO: добавить ORM для работы с базой
-# TODO: добавить конвертацию xlsx в json (либо сразу писать в бд?)
-# TODO: выпилить bill.py для unique_addresses.py, получать адреса из бд
-# TODO: почистить неиспользуемые пакеты requirements.txt
-# TODO: переезд на Poetry
-# TODO: подобрать инструмент для readme (генерация?)
-# TODO: рефакт функции main (класс?)
-# TODO: нужна оптимизация файла Dockerfile
-# TODO: добавить версию файла compose.yml
-# TODO: добавить .env в отдельный volume
+# TODO: настройка скрипта на прослушивание чата на новые сообщения ' old
+# TODO: добавить ORM для работы с базой ' old
+# TODO: добавить конвертацию xlsx в json (либо сразу писать в бд?) ' old
+# TODO: выпилить bill.py для unique_addresses.py, получать адреса из бд ' old
+# TODO: почистить неиспользуемые пакеты requirements.txt ' old
+# TODO: переезд на Poetry ' old
+# TODO: подобрать инструмент для readme (генерация?) ' old
+# TODO: рефакт функции main (класс?) ' old
+# TODO: нужна оптимизация файла Dockerfile ' old
+# TODO: добавить версию файла compose.yml ' old
+# TODO: добавить .env в отдельный volume ' old
