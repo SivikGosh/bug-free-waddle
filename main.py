@@ -1,6 +1,5 @@
 from pyrogram import Client
 import time
-from unique_addresses import result
 import re
 from dotenv import load_dotenv
 import os
@@ -14,7 +13,7 @@ api_hash = os.getenv('API_HASH')
 app = Client("my_account", api_id, api_hash)
 
 
-def main():
+def main():  # TODO: рефакт функции (класс?)
     with app:
         start_date = input(
             'введите начальную дату периода (в формате гггг-мм-дд): '
@@ -56,5 +55,4 @@ def main():
 
 app.run(main())
 
-# TODO разбить main на несколько функций
-# TODO запуск скрипта на прослушивание чата на новые сообщения
+# TODO: настройка скрипта на прослушивание чата на новые сообщения
