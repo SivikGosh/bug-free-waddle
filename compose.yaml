@@ -1,9 +1,9 @@
+# TODO: добавить версию файла
+# TODO: добавить .env
+
 services:
   server:
     build:
       context: .
     ports:
       - 8000:8000
-
-# TODO: добавить версию файла
-# TODO: добавить .env

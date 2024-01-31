@@ -1,3 +1,6 @@
+# TODO: почистить неиспользуемые пакеты
+# TODO: переезд на Poetry
+
 certifi==2023.11.17
 charset-normalizer==3.3.2
 et-xmlfile==1.1.0
@@ -20,6 +23,3 @@ TgCrypto==1.2.5
 tzdata==2023.4
 urllib3==2.1.0
 xlrd==2.0.1
-
-# TODO: почистить неиспользуемые пакеты
-# TODO: переезд на Poetry
