@@ -2,3 +2,7 @@ services:
   server:
     build:
       context: src/
+    volumes:
+      - /opt/.env:/app/src/.env
+    env_file:
+      - .env

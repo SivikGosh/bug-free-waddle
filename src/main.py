@@ -4,6 +4,7 @@ import re
 from dotenv import load_dotenv
 import os
 import sqlite3
+import sys
 
 load_dotenv()
 
@@ -15,9 +16,8 @@ app = Client("my_account", api_id, api_hash)
 
 def main():
     with app:
-        start_date = input(
-            'введите начальную дату периода (в формате гггг-мм-дд): '
-        )
+        start_date = sys.argv[1]
+
         count = 0
 
         for i in app.search_messages(os.getenv('SRC_CHAT_ID'), query='#нужно'):
@@ -49,8 +49,6 @@ def main():
 
         app.send_message('me', f'проверено {count} сообщений')
         app.read_chat_history(os.getenv('SRC_CHAT_ID'))
-
-        print(f'проверено {count} сообщений')
 
 
 app.run(main())
