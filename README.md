@@ -11,3 +11,5 @@ Chat messages listener and repply messages by target words.
 ---
 
 сейчас docker образ весит 329MB
+
+запуск скрипта: python main.py гггг-мм-дд

@@ -1,6 +1,8 @@
 services:
   server:
     build:
-      context: .
-    ports:
-      - 8000:8000
+      context: src/
+    volumes:
+      - /opt/.env:/app/src/.env
+    env_file:
+      - .env
