@@ -3,6 +3,4 @@ services:
     build:
       context: src/
     volumes:
-      - /opt/.env:/app/src/.env
-    env_file:
-      - .env
+      - D:/python_projects/docker_vol/DockerDesktopWSL/.env:/app/.env
