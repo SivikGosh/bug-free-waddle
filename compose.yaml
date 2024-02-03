@@ -2,5 +2,8 @@ services:
   server:
     build:
       context: src/
+    env_file:
+      - ./.env
+    command: '$START_DATE'
     volumes:
-      - D:/python_projects/docker_vol/DockerDesktopWSL/.env:/app/.env
+      - ./db.sqlite3:/app/db.sqlite3
