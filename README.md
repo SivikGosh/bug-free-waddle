@@ -1,18 +1,17 @@
-# bug-free-waddle
-Chat messages listener and repply messages by target words.
+## <p align="right" style="color: #2AABEE"><img align="center" src="https://telegram.org/img/favicon-32x32.png"> `chat's messages parser`</p>
 
-## Описание файлов
+<p style="border: 1px #2AABEE solid"></p>
 
-- unique_addresses.py: забирает список адресов из bill.py и формирует список
-множеств с названием улицы и номерами домов.
-- convert.py: преобразует список адресов из bill.csv в в список json-объектов,
-который потом работает в качестве списка addresses в python.
+#### Start
 
----
+- _Clone this repository._
+- _Create_ __`.env`__ _file by_ __`.env.example`__ _at root directory, with your variables values._
+- _Add database with name_ __`db.sqlite3`__ _._
+- _Build and run project with_ __`docker compose up -d --build`__ _._ _Add_ __`START_DATE`__ _key to begining command with oldest date parse period, format_ __`YYYY-MM-DD`__ _._
 
-сейчас docker образ весит 329MB
+_Project will be start, parse chat, and reply valid messages to your own chat._
 
-запуск скрипта: python main.py гггг-мм-дд
+<p style="border: 1px #2AABEE solid"></p>
 
-upd:
-START_DATE=гггг-мм-дд docker compose up -d --build
+#### Database structure
+<img src="db.sqlite3.png" width="200">
