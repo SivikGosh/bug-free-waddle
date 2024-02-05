@@ -11,7 +11,7 @@ load_dotenv()
 
 api_id = os.getenv('API_ID')
 api_hash = os.getenv('API_HASH')
-app = Client("my_account", api_id, api_hash)
+app = Client('parser', api_id, api_hash)
 
 
 # def main():
@@ -53,7 +53,7 @@ app = Client("my_account", api_id, api_hash)
 
 @app.on_message()
 def test(client, message):
-    if (message.chat.id == int(os.getenv('SRC_CHAT_ID'))):
+    if (message.chat.id == int(os.getenv('SRC_CHAT_ID'))) and ('#нужно' in message.text):
         try:
             lower_mes = message.text.lower()
         except AttributeError:
@@ -68,15 +68,10 @@ def test(client, message):
             sett = set(alias + build)
             if len(sett.intersection(mes)) > 1:
                 client.forward_messages(
-                    'me',
+                    int(os.getenv('TARGET_CHAT_ID')),
                     from_chat_id=os.getenv('SRC_CHAT_ID'),
                     message_ids=message.id
                 )
-        client.forward_messages(
-            'me',
-            from_chat_id=int(os.getenv('SRC_CHAT_ID')),
-            message_ids=message.id
-        )
 
 
 app.run()
