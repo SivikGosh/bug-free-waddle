@@ -1,9 +1,11 @@
+version: '3.8'
+
 services:
-  server:
+  chat_watcher:
     build:
       context: src/
     env_file:
       - ./.env
-    command: '$START_DATE'
+    # command: '$START_DATE' - будет использоваться в режиме парсера
     volumes:
       - ./db.sqlite3:/app/db.sqlite3
